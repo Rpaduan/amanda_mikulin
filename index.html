@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amanda Mikulin | Harmonização &amp; Pele</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#603e3b",
+                      "on-surface-variant": "#504443",
+                      "outline-variant": "#d4c3c1",
+                      "primary": "#4a2b28",
+                      "primary-fixed": "#ffdad6",
+                      "on-surface": "#1c1b1a",
+                      "on-primary-fixed": "#2e1412",
+                      "outline": "#827472",
+                      "on-secondary": "#ffffff",
+                      "surface-container-highest": "#e5e2df",
+                      "inverse-on-surface": "#f4f0ed",
+                      "secondary-fixed": "#ffdad4",
+                      "surface-bright": "#fdf9f6",
+                      "tertiary-fixed": "#eee0d4",
+                      "on-error-container": "#93000a",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#d2c4b8",
+                      "tertiary-container": "#51483f",
+                      "primary-container": "#63413e",
+                      "inverse-surface": "#31302f",
+                      "surface": "#fdf9f6",
+                      "on-primary": "#ffffff",
+                      "secondary": "#7e544d",
+                      "on-secondary-container": "#7a514a",
+                      "primary-fixed-dim": "#ebbbb7",
+                      "secondary-fixed-dim": "#f0bab1",
+                      "surface-tint": "#7a5552",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#fdf9f6",
+                      "secondary-container": "#ffc7bf",
+                      "surface-container-high": "#ebe7e4",
+                      "tertiary": "#3a3229",
+                      "surface-variant": "#e5e2df",
+                      "inverse-primary": "#ebbbb7",
+                      "on-error": "#ffffff",
+                      "on-primary-container": "#ddaeaa",
+                      "surface-container-low": "#f7f3f0",
+                      "on-background": "#1c1b1a",
+                      "on-tertiary-container": "#c4b7ab",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#4e453c",
+                      "on-tertiary-fixed": "#211a13",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#633d37",
+                      "surface-dim": "#ddd9d6",
+                      "on-secondary-fixed": "#30130e",
+                      "surface-container": "#f1edea"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "40px",
+                      "container-max": "1200px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "label-md": ["Hanken Grotesk"],
+                      "display-lg": ["Libre Caslon Text"],
+                      "headline-md": ["Libre Caslon Text"],
+                      "headline-sm": ["Libre Caslon Text"],
+                      "display-lg-mobile": ["Libre Caslon Text"],
+                      "body-lg": ["Hanken Grotesk"],
+                      "body-md": ["Hanken Grotesk"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(253, 249, 246, 1) 0%, rgba(253, 249, 246, 0.8) 50%, rgba(253, 249, 246, 0) 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 218, 214, 0.4);
+        }
+        .editorial-image-mask {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 z-50">
+<h1 class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed tracking-tight">Amanda Mikulin</h1>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#inicio">Início</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#sobre">Sobre</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#tratamentos">Tratamentos</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#contato">Contato</a>
+</nav>
+<a class="bg-primary text-white px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-80 scale-95 transition-all shadow-md" href="https://wa.me/message/TNUUC4AWG2O4C1" target="_blank">
+            Agendar Consulta
+        </a>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0 transition-all duration-1000 opacity-100">
+<img alt="Hero Background" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAkd645f-Ses6kLuQjMqEvC4Rk4TqQ1wNGm25zzlkv1lS2Lb99fTBQfQJmCKRYB_PMvEgmsA9cb_daTnNr6yUNVqkYeN8xU4pMbcjibW_ubfhfF284C8TAE1hpjpXWMvVmRacKiFER5zLbVjOpqCpUk7_8_38poqs_1kGJySTV-IoaIwzGhIAVAey2IVc97bNh-A02Rlr1MG9m-chkER2RXX1HCD0yCjktC37axK4h_Pe9lq_T9PXkkPz5bNjzsIhI9rXF1be9U0">
+<div class="absolute inset-0 hero-gradient hidden md:block"></div>
+<div class="absolute inset-0 bg-surface/60 md:hidden"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-12 transition-all duration-1000 opacity-100">
+<div class="md:col-span-7 lg:col-span-6 space-y-8 animate-fade-in-up">
+<div class="space-y-4">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase block">Bem-vinda à sua melhor versão</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                            Sua beleza naturalmente revelada
+                        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                            Tratamentos personalizados para tornar a sua pele <span class="font-bold text-primary">HARMONIZADA &amp; HARMONIOSA</span> através de técnicas estratégicas e refinadas.
+                        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary text-white px-8 py-4 text-center font-label-md text-label-md uppercase tracking-widest hover:opacity-90 transition-all flex items-center justify-center gap-2" href="#tratamentos">
+                            Conheça os Tratamentos
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="border border-outline text-primary px-8 py-4 text-center font-label-md text-label-md uppercase tracking-widest hover:bg-surface-container-low transition-all" href="#sobre">
+                            Saiba mais sobre mim
+                        </a>
+</div>
+</div>
+</div>
+<!-- Floating Decoration -->
+<div class="absolute bottom-10 right-10 hidden lg:block opacity-20 transition-all duration-1000 opacity-100">
+<span class="font-display-lg text-[200px] leading-none text-primary pointer-events-none select-none">Estética</span>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low" id="sobre">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100">
+<div class="grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-xl shadow-2xl relative z-10">
+<img alt="Amanda Mikulin" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5_XdGutb0DwB8t6TACT2s5txECAYUId40Ll62e0Eyye__AAMGo4GcQcPgPohbzzmCgSIqc_B65Kxbmf9d4jSZWMoe9Hs152QUyylMyzaQzuqH5r8CHn03QN91c022Ix9anWCycB3H-box1FoJ1tJXq6qsIoFlKn7Qc9PiSIjhVZ2NksoOxhRtiwICXhTQNVQy3BSefdiF9jOuKHowL9h4bwcsByfKbpHke4vdDAg89Yxzn-veY5u6ktL95HVZLkzt-EAIFB2-HRY">
+</div>
+<!-- Frame overlap -->
+<div class="absolute -top-6 -left-6 w-full h-full border-2 border-primary-fixed-dim rounded-xl -z-0"></div>
+<div class="absolute -bottom-10 -right-10 hidden md:block">
+<div class="p-6 bg-white shadow-xl max-w-[200px]">
+<span class="material-symbols-outlined text-primary text-4xl block mb-2">verified</span>
+<p class="font-label-md text-label-md text-on-surface-variant italic leading-tight">
+                                    "Minha missão é realçar o que você já tem de melhor."
+                                </p>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 space-y-8 mt-12 md:mt-0">
+<h2 class="font-headline-md text-headline-md text-primary">Amanda Mikulin</h2>
+<div class="space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                Especialista em Gerenciamento de Pele e Harmonização Estratégica, Amanda combina ciência avançada com um olhar artístico e sensível.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Com foco em resultados naturais e duradouros, cada procedimento é desenhado exclusivamente para atender às necessidades individuais de cada paciente, respeitando sua anatomia e história.
+                            </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<span class="px-4 py-2 bg-tertiary-fixed text-primary font-label-md text-label-md rounded-full">Gerenciamento de Pele</span>
+<span class="px-4 py-2 bg-tertiary-fixed text-primary font-label-md text-label-md rounded-full">Harmonização Facial</span>
+<span class="px-4 py-2 bg-tertiary-fixed text-primary font-label-md text-label-md rounded-full">Bioestimuladores</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid Inspired) -->
+<section class="py-24 bg-surface" id="tratamentos">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16 transition-all duration-1000 opacity-100">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase block mb-4">Nossos Procedimentos</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary">Excelência em cada detalhe</h2>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">
+<!-- Card 1 -->
+<div class="group relative bg-white border border-outline-variant/30 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="aspect-square overflow-hidden">
+<img alt="Botox &amp; Preenchimento" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhDarU-N-BIqsCRxLT2O-WoiR5jMDoBj0-P6-5pjcDu1eoI8tKEdXpCBnIbWM0sBXMKxBfKIFwbIm8BtbQ-F2vjQN0vimiFc1mzG35HAwq-UX_cEEFAwPTVfhSfLX-yy-Swo2n2C33zJXtBmGNthYs1qEXgUvBuP1Dzm2rZCuLBpY735KmXWGMPrm-sHIVaekqtTnqzjBs7lmP20NXIrisZ53o-UyKT14ygHdpxvWe3_zqiju90R8MIblsw8t41ErkuxjKtCiBeak">
+</div>
+<div class="p-8 space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-primary">Harmonização Facial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Procedimentos injetáveis estratégicos para restaurar volumes e suavizar linhas de expressão com naturalidade.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md group-hover:underline" href="#">Saiba mais <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+</div>
+<!-- Card 2 (Large Center) -->
+<div class="group relative bg-primary-fixed-dim border border-outline-variant/30 overflow-hidden flex flex-col md:scale-105 z-10 shadow-xl">
+<div class="p-10 space-y-6 flex-grow flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-primary text-5xl mx-auto">auto_awesome</span>
+<h3 class="font-headline-md text-headline-md text-primary">Gerenciamento de Pele</h3>
+<p class="font-body-lg text-body-lg text-primary/80 italic">"Pele saudável é a base de toda beleza."</p>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant">Protocolos exclusivos de hidratação, estimulação de colágeno e textura para um brilho radiante de dentro para fora.</p>
+</div>
+<div class="bg-primary py-4 text-center">
+<span class="text-white font-label-md text-label-md tracking-widest uppercase">Tratamento Premium</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-white border border-outline-variant/30 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="aspect-square bg-surface-container flex items-center justify-center p-12">
+<div class="text-center space-y-4">
+<span class="material-symbols-outlined text-primary text-6xl">face_retouching_natural</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Tecnologias Avançadas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Uso de equipamentos de última geração para bioestimulação e rejuvenescimento profundo.</p>
+</div>
+</div>
+<div class="p-8 mt-auto border-t border-outline-variant/30">
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md group-hover:underline" href="#">Ver todos os serviços <span class="material-symbols-outlined text-sm">trending_flat</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-24 bg-surface-container-lowest overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100">
+<div class="relative text-center max-w-3xl mx-auto">
+<span class="absolute -top-10 left-1/2 -translate-x-1/2 text-[180px] font-display-lg text-primary opacity-[0.05] pointer-events-none select-none">“</span>
+<p class="font-headline-md text-headline-sm md:text-headline-md text-primary italic leading-relaxed mb-8">
+                        Nunca me senti tão segura em um procedimento. Amanda entende exatamente o que eu queria: ficar melhor sem parecer 'mexida'. É pura arte.
+                    </p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-[1px] bg-outline"></div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary">Fernanda Souza, Paciente</span>
+<div class="w-12 h-[1px] bg-outline"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container-high" id="contato">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-1000 opacity-100">
+<div class="grid md:grid-cols-2 gap-16 items-start">
+<div class="space-y-10">
+<div>
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase block mb-4">Contato</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary">Vamos planejar sua transformação?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">Atendimento exclusivo e personalizado em um ambiente acolhedor no centro de Apucarana.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-primary">Endereço</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Rua Dr. Nagib Daher, 580<br>Centro, Apucarana - PR</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-primary">Horário de Atendimento</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Segunda a Sexta: 09h às 19h<br>Sábados: Mediante agendamento</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-4 bg-primary text-white px-8 py-5 rounded-full font-label-md text-label-md tracking-widest hover:opacity-90 transition-all shadow-lg group" href="https://wa.me/message/TNUUC4AWG2O4C1" target="_blank">
+                            FALE CONOSCO PELO WHATSAPP
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chat</span>
+</a>
+</div>
+<div class="bg-surface p-8 md:p-12 shadow-sm border border-outline-variant/30">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-8">Envie um e-mail</h3>
+<form class="space-y-6">
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">Nome</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 px-0 placeholder:text-outline/40" placeholder="Como podemos te chamar?" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">E-mail</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 px-0 placeholder:text-outline/40" placeholder="Ex: amanda@exemplo.com" type="email">
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md uppercase text-on-surface-variant">Mensagem</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-colors py-3 px-0 placeholder:text-outline/40" placeholder="Conte-nos brevemente o que procura..." rows="3"></textarea>
+</div>
+<button class="w-full py-4 bg-tertiary text-white font-label-md text-label-md uppercase tracking-widest hover:bg-primary transition-colors" type="submit">Enviar Mensagem</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter bg-surface-container dark:bg-inverse-surface border-t border-outline-variant/20">
+<div class="flex flex-col items-center md:items-start gap-4">
+<h2 class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed">Amanda Mikulin</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm text-center md:text-left">
+                Transformação consciente e beleza estratégica.
+            </p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-6">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all flex items-center gap-2 font-label-md text-label-md" href="https://instagram.com/amandamikulinestetica" target="_blank">
+                    Instagram
+                </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-label-md text-label-md" href="#">Privacidade</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all font-label-md text-label-md" href="#">Termos</a>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant opacity-60">
+                © 2024 Amanda Mikulin • Harmonização &amp; Pele. Todos os direitos reservados.
+            </p>
+</div>
+</footer>
+<!-- Floating Booking Widget (Optional enhancement from instructions) -->
+<a class="fixed bottom-8 right-8 z-40 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 md:hidden" href="https://wa.me/message/TNUUC4AWG2O4C1" target="_blank">
+<svg fill="currentColor" height="24" viewBox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+</a>
+<script>
+        // Smooth reveal on scroll interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10', 'opacity-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'translate-y-10', 'opacity-0');
+            observer.observe(el);
+        });
+    </script>
+
+
+</body></html>
