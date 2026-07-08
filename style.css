@@ -359,6 +359,78 @@ header {
     border-radius: 9999px;
 }
 
+.services {
+    padding-block: 9.6rem;
+    background: var(--surface);
+}
+
+.services__header {
+    max-width: 120rem;
+    margin-inline: auto;
+    margin-bottom: 6.4rem;
+    padding-inline: 1.6rem;
+    text-align: center;
+}
+
+.services__sub-title {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.services__title {
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+.services__content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.services__cards-l-r {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid color-mix(in srgb, var(--outline) 30%, transparent);
+    transition: .5s ease;
+}
+
+.services__cards-l-r:hover {
+    border-color: var(--primary);
+}
+
+.services__image-wrapper {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.services__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.5);
+    transition: .7s ease;
+}
+
+.services__image:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
     .hero__background::before {
@@ -370,6 +442,9 @@ header {
     .about__container {
         padding-inline: 4rem;
     } 
+    .about__decoration {
+        right: -2rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -385,6 +460,17 @@ header {
     .about__text {
         grid-column: 7 / span 6;
         margin-top: 0;
+    }
+    .services__header {
+        padding-inline: 4rem;
+    }
+    .services__title {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.02em;
+    }
+    .services__content {
+        padding: 0 4rem;
     }
 }
 
