@@ -576,6 +576,57 @@ header {
     border-top: 1px solid color-mix(in srgb, var(--outline) 30%, transparent);
 }
 
+.declaration {
+    overflow: hidden;
+    padding: 9.6rem 0;
+    background: var(--surface-card);
+}
+
+.declaration__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.declaration__content {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.declaration__text {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    line-height: 1.625;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 3.2rem;
+}
+
+.declaration__client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.declaration__outline {
+    width: 4.8rem;
+    height: 1px;
+    background: var(--text-secondary);
+}
+
+.declaration__client-name {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
     .hero__background::before {
@@ -623,6 +674,12 @@ header {
     }
     .services__card-center {
         transform: scale(1.05);
+    }
+    .declaration__container {
+        padding: 0 4rem;
+    }
+    .declaration__text {
+        font-size: 3.2rem;
     }
 }
 
