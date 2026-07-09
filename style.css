@@ -73,6 +73,12 @@ header {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.05em;
+    transition: .3s;
+    border-bottom: 3px solid transparent;
+}
+
+.header__link:hover {
+    border-bottom: 3px solid var(--text-primary);
 }
 
 .header__btn {
@@ -111,7 +117,7 @@ header {
 
 .hero__img {
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
     object-position: center;
 }
@@ -124,7 +130,7 @@ header {
         to right,
         rgba(253, 249, 246, 1) 0%,
         rgba(253, 249, 246, .8) 50%,
-        rgba(253, 249, 246, 0) 100%
+        rgba(253, 249, 246, 0) 70%
     );
 }
 
@@ -398,6 +404,13 @@ header {
     padding: 0 1.6rem;
 }
 
+.services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    height: 100%;
+}
+
 .services__cards-l-r {
     position: relative;
     display: flex;
@@ -408,7 +421,8 @@ header {
     transition: .5s ease;
 }
 
-.services__cards-l-r:hover {
+.services__cards-l-r:hover,
+.services__card-center:hover {
     border-color: var(--primary);
 }
 
@@ -430,6 +444,137 @@ header {
     transform: scale(1.05);
 }
 
+.services__card {
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.services__card-title {
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: var(--text-primary);
+}
+
+.services__card-description {
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-secondary);
+}
+
+.services__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    color: var(--text-primary);
+    transition: .5s;
+}
+
+.services__card-link:hover {
+    transform: scale(1.01);
+}
+
+.material-symbols-outlined.services__card-link-icon {
+    font-size: 2.4rem;
+}
+
+.services__card-center {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--outline);
+    overflow: hidden;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15);
+    transition: .3s;
+}
+
+.services__card-content {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 2.4rem;
+    text-align: center;
+    background: var(--surface-alt);
+}
+
+.services__card-content--light {
+    background: var(--primary-light);
+}
+.material-symbols-outlined.services__card-icon {
+    font-size: 5rem;
+    color: var(--text-primary);
+    margin-inline: auto;
+}
+
+.services__card-center-title {
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 4rem;
+    color: var(--text-primary);
+}
+
+.services__card-center-description {
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--text-secondary);
+}
+
+.services__card-center-text {
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-primary);
+}
+
+.services__card-center-footer {
+    padding-block: 1.6rem;
+    background: var(--text-primary);
+    text-align: center;
+}
+
+.services__card-center-footer-text {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 6000;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.services__card-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.material-symbols-outlined.services__cards-r-icon {
+    color: var(--text-primary);
+    font-size: 6rem;
+    line-height: 1;
+}
+
+.services__cards-l-r-footer {
+    margin-top: auto;
+    padding: 3.2rem;
+    border-top: 1px solid color-mix(in srgb, var(--outline) 30%, transparent);
+}
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
@@ -448,6 +593,7 @@ header {
 }
 
 @media (min-width: 768px) {
+  
     .about__image-container {
         grid-column: span 5;
     }
@@ -471,6 +617,12 @@ header {
     }
     .services__content {
         padding: 0 4rem;
+    }
+    .services__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .services__card-center {
+        transform: scale(1.05);
     }
 }
 
