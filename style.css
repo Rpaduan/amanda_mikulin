@@ -18,6 +18,7 @@
     --surface: #fdf9f6;
     --surface-alt: #f7f3f0;
     --surface-card: #ffffff;
+    --whatsapp: #25d366;
 
     /* Bordas */
     --outline: #d4c3c1;
@@ -56,7 +57,7 @@ header {
     z-index: 50;
 }
 
-.header__brand {
+.brand {
     font-family: var(--font-primary);
     font-size: 2.4rem;
     color: var(--text-primary);
@@ -840,6 +841,96 @@ header {
     background: var(--primary);
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    width: 100%;
+    padding: 4.8rem 2.4rem;
+    background: var(--surface);
+    border-top: 1px solid rgba(212, 195, 193, .2);
+}
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.footer__description {
+    max-width: 36rem;
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.footer__links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: .3s ease;
+}
+
+.footer__social-link:hover {
+    color: var(--primary);
+}
+
+.footer__copyright {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    opacity: .6;
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 3.2rem;
+    bottom: 3.2rem;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    background: var(--whatsapp);
+    color: var(--white);
+    border-radius: 50%;
+    box-shadow: 0 2rem 4rem rgba(74, 43, 40, .18);
+    transition: .3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button__icon {
+    width: 24.rem;
+    height: 2.4rem;
+    fill: currentColor;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {
     .hero__background::before {
@@ -906,6 +997,22 @@ header {
     }
     .contact__form {
         padding: 4.8rem;
+    }
+    .footer {
+        flex-direction: row;
+        padding-inline: 4.8rem;
+    }
+    .footer__brand {
+        align-items: flex-start;
+    }
+    .footer__description {
+        text-align: left;
+    }
+    .footer__social {
+        align-items: flex-end;
+    }
+    .whatsapp-button {
+        display: none;
     }
 }
 
