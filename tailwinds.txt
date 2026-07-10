@@ -1,5 +1,0 @@
-*body
-"bg-background text-on-background font-body-md selection:gb-primary-fixed selection:text-on-primary-fixed"
-
-*header
-"fixed top-0 left-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 z-50"

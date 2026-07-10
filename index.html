@@ -11,95 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary-fixed-variant": "#603e3b",
-                      "on-surface-variant": "#d4c3c1",
-                      "secondary":"#7e544d",
-                      "primary": "#4a2b28",
-                      "primary-fixed": "#ffdad6",
-                      "on-surface": "#1c1b1a",
-                      "on-primary-fixed": "#2e1412",
-                      "outline": "#827472",
-                      "on-secondary": "#ffffff",
-                      "surface-container-highest": "#e5e2df",
-                      "inverse-on-surface": "#f4f0ed",
-                      "secondary-fixed": "#ffdad4",
-                      "surface-bright": "#fdf9f6",
-                      "tertiary-fixed": "#eee0d4",
-                      "on-error-container": "#93000a",
-                      "error": "#ba1a1a",
-                      "tertiary-fixed-dim": "#d2c4b8",
-                      "tertiary-container": "#51483f",
-                      "primary-container": "#63413e",
-                      "inverse-surface": "#31302f",
-                      "surface": "#fdf9f6",
-                      "on-primary": "#ffffff",
-                      "secondary": "#7e544d",
-                      "on-secondary-container": "#7a514a",
-                      "primary-fixed-dim": "#ebbbb7",
-                      "secondary-fixed-dim": "#f0bab1",
-                      "surface-tint": "#7a5552",
-                      "surface-container-lowest": "#ffffff",
-                      "background": "#fdf9f6",
-                      "secondary-container": "#ffc7bf",
-                      "surface-container-high": "#ebe7e4",
-                      "tertiary": "#3a3229",
-                      "surface-variant": "#e5e2df",
-                      "inverse-primary": "#ebbbb7",
-                      "on-error": "#ffffff",
-                      "on-primary-container": "#ddaeaa",
-                      "surface-container-low": "#f7f3f0",
-                      "on-background": "#1c1b1a",
-                      "on-tertiary-container": "#c4b7ab",
-                      "error-container": "#ffdad6",
-                      "on-tertiary-fixed-variant": "#4e453c",
-                      "on-tertiary-fixed": "#211a13",
-                      "on-tertiary": "#ffffff",
-                      "on-secondary-fixed-variant": "#633d37",
-                      "surface-dim": "#ddd9d6",
-                      "on-secondary-fixed": "#30130e",
-                      "surface-container": "#f1edea"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {
-                      "margin-desktop": "40px",
-                      "container-max": "1200px",
-                      "unit": "8px",
-                      "gutter": "24px",
-                      "margin-mobile": "16px"
-              },
-              "fontFamily": {
-                      "label-md": ["Hanken Grotesk"],
-                      "display-lg": ["Libre Caslon Text"],
-                      "headline-md": ["Libre Caslon Text"],
-                      "headline-sm": ["Libre Caslon Text"],
-                      "display-lg-mobile": ["Libre Caslon Text"],
-                      "body-lg": ["Hanken Grotesk"],
-                      "body-md": ["Hanken Grotesk"]
-              },
-              "fontSize": {
-                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
-                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
-                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
-                      "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "400"}],
-                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
-              }
-            },
-          },
-        }
-    </script>
+
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -127,7 +39,7 @@
 </header>
 <main>
 <!-- Hero Section -->
-<section class="hero" id="start">
+<section class="hero fade-up" id="start">
     <div class="hero__background">
         <img class="hero__img" src="assets/hero_img.png" alt="Imgens sobre o cuidado com a pele.">
     </div>
@@ -164,8 +76,7 @@
 </section>
 <!-- About Section -->
 <section class="about" id="about">
-    <div
-        class="about__container">
+    <div class="about__container fade-up">
         <div class="about__content">
             <div class="about__image-container">
                 <div class="about__image-wrapper">
@@ -211,13 +122,13 @@
     </div>
 </section>
 <!-- Services Section (Bento Grid Inspired) -->
-<section class="services" id="treatments">
-    <div class="services__header">
+<section class="services " id="treatments">
+    <div class="services__header fade-up">
         <span class="services__sub-title">Nossos
             Procedimentos</span>
         <h2 class="services__title">Excelência em cada detalhe</h2>
     </div>
-    <div class="services__content">
+    <div class="services__content fade-up">
         <div class="services__grid">
             <!-- Card 1 -->
             <div class="services__cards-l-r">
@@ -267,7 +178,7 @@
 </section>
 <!-- Testimonial Section -->
 <section class="declaration">
-    <div class="declaration__container">
+    <div class="declaration__container fade-up">
         <div class="declaration__content">
             <p class="declaration__text">
                 <em>
@@ -286,7 +197,7 @@
 </section>
 <!-- Contact Section -->
 <section class="contact" id="contact">
-    <div class="contact__container">
+    <div class="contact__container fade-up">
         <div class="contact__grid">
             <div class="contact__content">
                 <div>
@@ -342,14 +253,14 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="footer">
-    <div class="footer__brand">
+<footer>
+    <div class="footer__brand fade-up">
         <h2 class="brand">Amanda Mikulin</h2>
         <p class="footer__description">
             Transformação consciente e beleza estratégica.
         </p>
     </div>
-    <div class="footer__social">
+    <div class="footer__social fade-up">
         <div class="footer__links">
             <a class="footer__social-link" href="https://instagram.com/amandamikulinestetica" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a class="footer__social-link" href="#">Privacidade</a>
@@ -370,7 +281,7 @@
     </svg>
 </a>
 
-<!-- <script src="script.js"></script> -->
+<script src="main.js"></script>
 
 
 </body>
