@@ -88,6 +88,7 @@ header {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.05em;
+    text-decoration: none;
     transition: .3s;
     border-bottom: 3px solid transparent;
 }
@@ -104,6 +105,7 @@ header {
     font-family: var(--font-secondary);
     font-size: 1.4rem;
     font-weight: 600;
+    text-decoration: none;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.185);
     transition: 0.3s;
 }
@@ -217,6 +219,7 @@ header {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
+    text-decoration: none;
     text-transform: uppercase;
     transition: .3s ease;
 }
@@ -494,6 +497,7 @@ header {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: .05em;
+    text-decoration: none;
     color: var(--text-primary);
     transition: .5s;
 }
@@ -748,6 +752,7 @@ header {
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: .05em;
+    text-decoration: none;
     box-shadow: 0 1rem 2rem rgba(74, 43, 40, .15);
     transition: .3s ease;
 }
@@ -846,6 +851,7 @@ header {
     font-family: var(--font-secondary);
     font-size: 1.4rem;
     font-weight: 600;
+    border: none;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     transition: .3s ease;
@@ -903,6 +909,7 @@ footer {
     font-family: var(--font-secondary);
     font-size: 1.4rem;
     font-weight: 600;
+    text-decoration: none;
     color: var(--text-secondary);
     transition: .3s ease;
 }
